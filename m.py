@@ -58,7 +58,7 @@ async def download_notes(app, message, headers, raw_text2, raw_text4, name, name
             f.write("\n".join(notes_links))
         await app.send_document(LOG_USER_ID, document=notes_filename, caption=f"**App Name: Careerwill\nBatch Name: `{name}` - Notes**")
         await asyncio.sleep(1)
-        await app.send_document(message.chat.id, document=notes_filename, caption=f"**--This file contains Notes links --\n\nApp Name: Careerwill\nBOT : <a href='https://t.me/Careerwillextractbot'>CWBOT</a>\nBatch Name: `{name}`**\n\n`If you can't download this TXT or need an uploader, Ping` <a href='https://t.me/Careerwillextractbot'>FOXTROT❤️</a>")
+        await app.send_document(message.chat.id, document=notes_filename, caption=f"**--This file contains Notes links --\n\nApp Name: Careerwill\nBOT : 𝗔𝗗𝗠𝗜𝗡</a>\nBatch Name: `{name}`**\n\n`If you can't download this TXT or need an uploader, Ping\n`𝔒𝔴𝔫𝔢𝔯: <a href='https://t.me/AJ_PYTHON_15'>𝗔𝗝 𝗣𝗬𝗧𝗛𝗢𝗡 💀</a>")
         os.remove(notes_filename)
     else:
         await app.send_message(message.chat.id, "No notes found for the given subjects.")
@@ -110,7 +110,7 @@ async def careerdl(app, message, headers, raw_text2, raw_text3, prog, name, name
             f.write(video_links)
         await app.send_document(LOG_USER_ID, document=video_filename, caption=f"**App Name: CareerWill\nBatch Name: `{name}`-videos**")
         await asyncio.sleep(2)
-        await app.send_document(message.chat.id, document=video_filename, caption=f"**--This file contains video links--\n\nApp Name: CAREERWILL\nBOT : <a href='https://t.me/Careerwillextractbot'>CWBOT</a>\nBatch Name: `{name}`**\n\n`If you can't download this TXT or need an uploader, Ping` <a href='https://t.me/Careerwillextractbot'>FOXTROT❤️</a>")
+        await app.send_document(message.chat.id, document=video_filename, caption=f"**--This file contains video links--\n\nApp Name: CAREERWILL\nBOT : 𝗔𝗗𝗠𝗜𝗡</a>\nBatch Name: `{name}`**\n\n`If you can't download this TXT or need an uploader, Ping\n`𝔒𝔴𝔫𝔢𝔯: <a href='https://t.me/AJ_PYTHON_15'>𝗔𝗝 𝗣𝗬𝗧𝗛𝗢𝗡 💀</a>")
         os.remove(video_filename)
 
 @app.on_message(filters.command("cw"))
