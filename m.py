@@ -47,7 +47,7 @@ async def download_notes(app, message, headers, raw_text2, raw_text4, name, name
                 
                 
                 if note_link:
-                    notes_links.append(f"({topic_name1}) {note_name} bot-@Careerwillextractbot: {note_link}")
+                    notes_links.append(f"({topic_name1}) {note_name}: {note_link}")
 
         except requests.exceptions.RequestException as e:
             print(f"Error fetching notes for subject ID {id_text}: {e}")
