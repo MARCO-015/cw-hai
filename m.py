@@ -113,6 +113,11 @@ async def careerdl(app, message, headers, raw_text2, raw_text3, prog, name, name
         await app.send_document(message.chat.id, document=video_filename, caption=f"**--This file contains video links--\n\nApp Name: CAREERWILL\nBOT : 𝗔𝗗𝗠𝗜𝗡</a>\nBatch Name: `{name}`**\n\n`If you can't download this TXT or need an uploader, Ping\n`𝔒𝔴𝔫𝔢𝔯: <a href='https://t.me/AJ_PYTHON_15'>𝗔𝗝 𝗣𝗬𝗧𝗛𝗢𝗡 💀</a>")
         os.remove(video_filename)
 
+# Start command
+@bot.on_message(filters.command("start"))
+def start(client, message):
+    message.reply_text("👋 Welcome to CareerWill Batch Extractor Bot!\n\nSend your CareerWill credentials to get started.")
+
 @app.on_message(filters.command("cw"))
 async def career_will(app, message):
     try:
